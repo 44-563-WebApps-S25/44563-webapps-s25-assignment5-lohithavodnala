@@ -33,6 +33,34 @@
 
     <div class="container mt-4">
         <h1 class="text-center mt-3">Pick a Pet by Lohitha Vodnala</h1>
+         <!-- Bootstrap Form for Email and Pet Choice -->
+         <div class="card p-4 mt-4 shadow">
+            <h3 class="mb-3">Pet Information Form</h3>
+            <form>
+                <!-- Email Field -->
+                <div class="form-group mb-3">
+                    <label for="email">Email address:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                    <small class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+
+                <!-- Pet Choice Field -->
+                <div class="form-group mb-3">
+                    <label for="pet">Pet:</label>
+                    <input type="text" class="form-control" id="pet" placeholder="Enter your pet" required>
+                </div>
+
+                <!-- Newsletter Signup Checkbox -->
+                <div class="form-check mb-3">
+                    <input type="checkbox" class="form-check-input" id="newsletter">
+                    <label class="form-check-label" for="newsletter">Sign up for newsletter?</label>
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
         
         <!-- Row for Letters -->
         <div class="row text-center">
