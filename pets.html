@@ -3,76 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>choose your favorite pet</title>
+    <title>Choose Your Favorite Pet</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-has context menu        
 </head>
 <body>
 
-    <h1>Pick a pet by Lohitha Vodnala</h1>
-    <div class="container">
-      
-      <!-- Row for Letters -->
-      <div class="row">
-          <div class="col-sm-2 border">V</div>
-          <div class="col-sm-2 border">O</div>
-          <div class="col-sm-2 border">D</div>
-          <div class="col-sm-2 border">N</div>
-          <div class="col-sm-2 border">A</div>
-          <div class="col-sm-2 border">L</div>
-      </div>
+    <h1 class="text-center mt-3">Pick a Pet by Lohitha Vodnala</h1>
 
-      <!-- Row for Pet Names -->
-      <div class="row">
-          <div class="col-md border">Viper </div>
-          <div class="col-md border">Orca </div>
-          <div class="col-md border">Dalmatian </div>
-          <div class="col-md border">Nightingale </div>
-          <div class="col-md border">Abyssinian </div>
-          <div class="col-md border">Labrador </div>
-      </div>
-
-      <p><strong>Which row breaks first?</strong> The pet names row breaks first.  
-          <br>Explanation: Since pet names take up more space compared to single letters, 
-          the pet names row wraps into multiple lines when the screen is resized.</p>
-  </div>
-
-  </body>
-  </html>
-  <div class="container">
-    <h2>Pet Images</h2>
-
-    <!-- First Container: Regular Images -->
-    <div class="row">
-        <div class="col-md-4">
-            <img src="husky.jpg" class="img-fluid" alt="Siberian Husky">
+    <div class="container mt-4">
+        
+        <!-- Row for Letters -->
+        <div class="row text-center">
+            <div class="col-sm-2 border">V</div>
+            <div class="col-sm-2 border">O</div>
+            <div class="col-sm-2 border">D</div>
+            <div class="col-sm-2 border">N</div>
+            <div class="col-sm-2 border">A</div>
+            <div class="col-sm-2 border">L</div>
         </div>
-        <div class="col-md-4">
-            <img src="hedgehog.jpg" class="img-fluid" alt="Hedgehog">
+
+        <!-- Row for Pet Names -->
+        <div class="row text-center">
+            <div class="col-md border">Viper</div>
+            <div class="col-md border">Orca</div>
+            <div class="col-md border">Dalmatian</div>
+            <div class="col-md border">Nightingale</div>
+            <div class="col-md border">Abyssinian</div>
+            <div class="col-md border">Labrador</div>
         </div>
-        <div class="col-md-4">
-            <img src="akita.jpg" class="img-fluid" alt="Akita">
+
+        <p class="mt-3"><strong>Which row breaks first?</strong> The pet names row breaks first.
+            <br>Explanation: Since pet names take up more space compared to single letters, 
+            the pet names row wraps into multiple lines when the screen is resized.
+        </p>
+    </div>
+
+    <!-- Pet Images -->
+    <div class="container mt-5">
+        <h2>Pet Images</h2>
+
+        <!-- First Container: Regular Images -->
+        <div class="row">
+            <div class="col-md-4">
+                <img src="husky.jpg" class="img-fluid" alt="Siberian Husky">
+            </div>
+            <div class="col-md-4">
+                <img src="hedgehog.jpg" class="img-fluid" alt="Hedgehog">
+            </div>
+            <div class="col-md-4">
+                <img src="akita.jpg" class="img-fluid" alt="Akita">
+            </div>
+        </div>
+
+        <!-- Second Container: Thumbnails -->
+        <h3 class="mt-3">Thumbnails</h3>
+        <div class="row">
+            <div class="col-md-4">
+                <img src="husky.jpg" class="img-thumbnail" alt="Siberian Husky">
+            </div>
+            <div class="col-md-4">
+                <img src="hedgehog.jpg" class="img-thumbnail" alt="Hedgehog">
+            </div>
+            <div class="col-md-4">
+                <img src="akita.jpg" class="img-thumbnail" alt="Akita">
+            </div>
         </div>
     </div>
 
-    <!-- Second Container: Thumbnails -->
-    <h3>Thumbnails</h3>
-    <div class="row">
-        <div class="col-md-4">
-            <img src="husky.jpg" class="img-thumbnail" alt="Siberian Husky">
-        </div>
-        <div class="col-md-4">
-            <img src="hedgehog.jpg" class="img-thumbnail" alt="Hedgehog">
-        </div>
-        <div class="col-md-4">
-            <img src="akita.jpg" class="img-thumbnail" alt="Akita">
-        </div>
-    </div>
-
-
+    <!-- Pet Information Table -->
     <div class="container mt-5">
         <h3>Pet Information Table</h3>
-    
         <table class="table table-striped table-hover table-bordered">
             <caption>List of Pets, Rivers, and Cities Based on Letters in VODNALA</caption>
             <thead class="thead-dark">
@@ -124,47 +124,51 @@ has context menu
         </table>
     </div>
 
-
-
-
-
-
-    
-
-
+    <!-- Pet Selection Buttons -->
     <div class="container mt-5">
         <h3>Pet Selection Buttons</h3>
-    
         <div class="btn-toolbar" role="toolbar" aria-label="Pet Selection Toolbar">
-
-            <!-- Button Group 1: Success (Pets with images - V, O, D) -->
             <div class="btn-group me-2" role="group" aria-label="Pets with images">
                 <button type="button" class="btn btn-success">V</button>
                 <button type="button" class="btn btn-success">O</button>
                 <button type="button" class="btn btn-success">D</button>
             </div>
-    
-            <!-- Button Group 2: Alert Colors (Two buttons - N, A) -->
             <div class="btn-group me-2" role="group" aria-label="Alert buttons">
                 <button type="button" class="btn btn-warning">N</button>
                 <button type="button" class="btn btn-warning">A</button>
             </div>
-    
-            <!-- Button Group 3: Danger (One button - L) -->
             <div class="btn-group" role="group" aria-label="Danger button">
                 <button type="button" class="btn btn-danger">L</button>
             </div>
-    
         </div>
 
         <div class="mt-3"></div>
-    
-        <!-- Basic Example Button Group (Using Reference) -->
-    <div class="d-inline-flex">
-        <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">V</button>
-        <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">O</button>
-        <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">D</button>
-        <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">N</button>
-        <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">A</button>
-        <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">L</button>
+
+        <!-- Basic Example Button Group -->
+        <div class="d-inline-flex">
+            <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">V</button>
+            <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">O</button>
+            <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">D</button>
+            <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">N</button>
+            <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">A</button>
+            <button class="btn btn-primary fw-bold p-1 m-0" style="font-size: 24px; border-radius: 3px;">L</button>
+        </div>
     </div>
+
+    <!-- Dropdown Menu -->
+    <div class="container mt-5">
+        <h3>Pet Selection Page</h3>
+        <div class="dropdown mt-3">
+            <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+                Select a Page
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <li><a class="dropdown-item" href="basic.html">Basic Page</a></li>
+                <li><a class="dropdown-item" href="advanced.html">Advanced Page</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
